@@ -1,11 +1,4 @@
-@font-face {
-    font-family: 'rabioheadregular';
-    src: url('font/rabiohead-webfont.woff2') format('woff2'),
-         url('font/rabiohead-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
 
-}
 /*************************************************menu display*************************************************/
 
 
@@ -23,7 +16,7 @@ a{
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  width: 95%;
+  width: 100%;
   -webkit-flex-flow: row wrap;
   justify-content: space-around;
 }
@@ -49,15 +42,18 @@ input, textarea {
     margin-left: auto;
     margin-right: auto;
     margin: 10px 0 10px 0;
-    padding: 10px;
+    /* padding: 10px; */
     background-color: white;
     font-size: 1em;
-
+    padding: 10px 0 10px 0;
 }
 input[type=submit]
 {
 	height: 50px;
-  margin:10px;
+  margin:10px 0 10px 0;
+  display: block;
+  margin: 0 auto;
+  margin-left: 5px;
 }
 form{
 	padding-bottom: 40px;
@@ -442,39 +438,43 @@ textarea
 
 
 
-
+html, body{
+  height: 100%;
+}
 
 /*----------------------head and nav---------------------- */
 .nav{
+  overflow: hidden;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
-  display: inline-block;
-  margin: 0 auto;
-  bottom: 20px;
-  text-align: center;
-  margin-left: -250px;
+  padding-left: 0;
+}
+.nav a{
+	text-align: center;
+	padding:14px 16px;
+	text-decoration: none;
+	color: #972d32;
+	font-size: 1em;
+  margin: 0px auto;
+  padding-bottom: 7px;
 }
 
-.nav a{
-	float:left;
-	text-align: center;
-	padding:12px 27px;
-	text-decoration: none;
-	color: white;
-	font-size: 1em;
-	display: block;
-  font-weight: 900;
-}
 .nav li{
   display: inline;
   text-align: center;
+  padding: 10px 0 10px;
 }
 .nav a:hover{
-	color: #972d32;
-	background-color: white;
+	color: white;
+	background-color: #972d32;
 	transition: all .3s linear;
 }
 .onPage a{
-  border-bottom:4px solid white;
+  border-bottom:4px solid #972d32;
 }
 
 
@@ -495,7 +495,7 @@ textarea
 .hotnav a{
 	text-align: center;
 	text-decoration: none;
-	color: white;
+	color: #282728;
 	padding: 10px;
 }
 .hotnav a img{
@@ -771,6 +771,18 @@ body {
 #c1
 {
   min-height: 500px;
+  height: 50%;
+}
+#c1 h1{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  width: 100%;
+  height: 20%;
+  margin: auto;
 }
 #c2, #c4{
   min-height: 500px;
@@ -797,10 +809,6 @@ body {
 	margin: 0 auto;
   position: relative;
   text-align: center;
-  background-image: url("img/back.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 
 }
 #c2{
@@ -958,6 +966,9 @@ footer a {
 	font-family: 'rabioheadregular', sans-serif;
 }
 @media (max-width: 900px){
+  #c1 h1{
+    font-size: 3rem;
+  }
 	footer p{
 		text-align: center;
 		padding: 0;
@@ -1051,21 +1062,22 @@ footer a {
 	{
 		background-image: none;
 	}
-	.nav{
+	/* .nav{
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
     margin-left: -200px;
-	}
+	} */
+
   #c1{
     min-height: 450px;
   }
-  .nav a{
+  /* .nav a{
     font-size: .9rem;
     padding:12px 8px;
     margin-left: 22px;
-  }
-	.hotnav li
+  } */
+	/* .hotnav li
 	{
 		list-style-type: none;
 		margin: 0;
@@ -1077,7 +1089,7 @@ footer a {
 	.hotnav{
 		padding: 0;
     position: relative;
-	}
+	} */
 
 
 	@supports (display: grid) {
@@ -1151,6 +1163,9 @@ footer a {
   			justify-content: center;
   		}
   	}
+    #c1 h1{
+      font-size: 2.5rem;
+    }
     .project
     {
       width: 100%;
