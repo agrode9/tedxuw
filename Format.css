@@ -182,7 +182,7 @@ textarea
 	font-size: 1.4em;
 	font-family: 'rabioheadregular', sans-serif;
 	float: left;
-	margin-top: 20%;
+	margin-top: 20px;
   padding: 10px 10px 13px 60px;
   margin-left: 5px;
 	text-shadow: 5px 2px 8px black;
@@ -1139,7 +1139,7 @@ footer a {
 		font-family: 'rabioheadregular', sans-serif;
 		float: left;
 		margin-left: 5px;
-		margin-top: 20%;
+		margin-top: 2%;
     padding: 10px 10px 10px 40px;
 		text-shadow: 5px 2px 8px black;
     -webkit-box-shadow: -5px 5px 0px 0px black;
@@ -1198,7 +1198,7 @@ footer a {
 		font-family: 'rabioheadregular', sans-serif;
 		float: left;
 		margin-left: 5px;
-		margin-top: 55%;
+		margin-top: 5%;
     padding: 10px 10px 10px 40px;
 		text-shadow: 5px 2px 8px black;
     -webkit-box-shadow: -5px 5px 0px 0px black;
