@@ -6,20 +6,7 @@ a{
   font-family: "rabioheadregular", sans-serif;
 }
 /*************************************************contact*************************************************/
-.container{
-  padding: 0;
-  margin: 0;
-  list-style: none;
 
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  width: 100%;
-  -webkit-flex-flow: row wrap;
-  justify-content: space-around;
-}
 .row{
   width: 75%;
   order: 1;
